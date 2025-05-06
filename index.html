@@ -4,27 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="icon" type="..image/png" href="..img/logomain.png" style="width:;">
-
-
-    <script type="importmap">
-        {
-          "imports": {
-            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-            "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js",
-            "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
-          }
-        }
-        </script>
-
-
-
+    <link rel="icon" type="image/png" href="img/logomain.png">
     <link href="https://cdn.jsdelivr.net/gh/repalash/gilroy-free-webfont@fonts/Gilroy-Light.css" rel="stylesheet">
-    <link href="raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Light.css" rel="stylesheet">
+    <link href="https://raw.githubusercontent.com/repalash/gilroy-free-webfont/fonts/Gilroy-Light.css" rel="stylesheet">
     <link rel="preconnect" href="//fdn.fontcdn.ir">
     <link rel="preconnect" href="//v1.fontapi.ir">
     <link href="https://v1.fontapi.ir/css/SFProDisplay" rel="stylesheet">
@@ -33,11 +18,13 @@
 </head>
 
 <body class="loading">
+
     <div id="intro-video-wrap" class="intro-wrap">
-        <video id="intro-video" src="img/intro2.mp4" autoplay muted playsinline></video>
-      </div>
-      
-      
+        <video id="intro-video" playsinline webkit-playsinline autoplay muted loop preload="auto">
+            <source src="img/intro2_silent.mp4#t=0.001" type="video/mp4">
+        </video>
+    </div>
+
     <div class="main">
         <div class="headb"></div>
         <header class="reveal-delayed">
@@ -52,7 +39,7 @@
                 <a href="#page6">Связь</a>
                 <a href="#page7">Фото</a>
             </nav>
-            
+
         </header>
         <header class="mobile-header">
             <div class="mobile-header-inner">
@@ -74,7 +61,7 @@
                 <a href="#page7">Фото</a>
             </nav>
         </header>
-        
+
 
         <div class="content">
             <div class="page1" id="page0">
@@ -84,8 +71,10 @@
                     <div class="block1">
                         <div class="leftcount" reveal-delayed>
                             <p>ведущий разработчик отбеливающей косметики для полости рта</p>
-                            <video id="desvid" src="img/Gen2.mp4" autoplay loop muted playsinline></video>
-                            <video id="mobvid" src="img/tooth1.mp4" autoplay loop muted playsinline></video>
+                            <video id="desvid" src="img/Gen2.mp4" autoplay loop muted playsinline preload="none"
+                                loading="lazy"></video>
+                            <video id="mobvid" src="img/mobiletooth.mp4" autoplay loop muted playsinline preload="none"
+                                loading="lazy"></video>
                             <a href="" class="button" id="page1">
                                 <div class="buttonmain">
                                     Подробнее
@@ -97,10 +86,12 @@
                         </div>
 
                         <div class="center">
-                            <video src="img/tooth1.mp4" autoplay loop muted playsinline></video>
+                            <video src="img/tooth1.webm" autoplay loop muted playsinline preload="none"
+                                loading="lazy"></video>
                         </div>
                         <div class="rightcount" reveal-delayed>
-                            <video src="img/Gen.mp4" autoplay loop muted playsinline></video>
+                            <video src="img/Gen.mp4" autoplay loop muted playsinline preload="none"
+                                loading="lazy"></video>
                             <p>cоздаем продукты, которые не только отбеливают зубы, но и заботятся о них</p>
                         </div>
                     </div>
@@ -123,12 +114,14 @@
 
             </div>
             <div class="vid1" id="page2">
-                <video id="vid1" src="img/Gen4.mp4" autoplay loop muted playsinline></video>
+                <video id="vid1" src="img/Gen4.mp4" autoplay loop muted playsinline preload="none"
+                    loading="lazy"></video>
             </div>
 
             <div class="page3 reveal">
                 <div class="page3cont">
-                    <div class="absimg1"><img src="img/second.gif" alt=""></div>
+                    <div class="absimg1"><video src="/img/Gen.mp4" autoplay loop muted playsinline preload="none"
+                            loading="lazy"></video></div>
                     <h1 class="metallic-text">4 ШАГА ДО ИДЕАЛЬНОЙ ФОРМУЛЫ</h1>
                     <div class="mian3block">
                         <div class="blockp3">
@@ -216,8 +209,8 @@
                 </div>
             </div>
             <div class="page5 reveal" id="page4">
-                <div class="absimg2">
-                    <video src="img/Gen4.mp4" autoplay loop muted playsinline></video>
+                <div class="absimg2 reveal">
+                    <video src="img/Gen4.mp4" autoplay loop muted playsinline preload="none" loading="lazy"></video>
                 </div>
                 <h1 class="metallic-text">АССОРТИМЕНТ</h1>
 
@@ -284,13 +277,15 @@
                             </div>
                         </div>
                         <div class="block62 reveal">
-                            <video src="img/tooth1.mp4" autoplay loop muted playsinline></video>
+                            <video src="img/tooth1.mp4" autoplay loop muted playsinline preload="none"
+                                loading="lazy"></video>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="absimg3 reveal">
-                <video id="page6" src="img/Gen1.mp4" autoplay loop muted playsinline></video>
+                <video id="page6" src="img/Gen1.mp4" autoplay loop muted playsinline preload="none"
+                    loading="lazy"></video>
             </div>
             <div class="page7">
                 <div class="page7cont">
@@ -311,7 +306,7 @@
                     </div>
                 </a>
             </div>
-            <div class="page8 reveal" id="page7">
+            <div class="page8 reveal" id="page7" >
                 <div class="page8cont">
                     <h1 class="metallic-text">ФОТОГАЛЕРЕЯ</h1>
                     <div class="gallery">
@@ -339,14 +334,14 @@
                     <button class="lb-next">›</button>
                     <a href="https://www.instagram.com/innowhite/" target="_blank" class="lb-more">
                         Instagram <img src="img/instagram1.svg" alt="Instagram">
-                      </a>
+                    </a>
                 </div>
             </div>
 
             <div class="zeroblock">
 
             </div>
-            <footer class="footer reveal" id="page8">
+            <footer class="footer reveal" id="page8" >
                 <div class="footer-top">
                     <div class="footer-logo">
                         <img src="img/Group 20.svg" alt="InnoWhite Logo">
@@ -388,25 +383,39 @@
 
     </div>
 
-<div class="modal" id="orderModal">
-  <div class="modal__dialog">
-    <button class="modal__close">×</button>
+    <div class="modal" id="orderModal">
+        <div class="modal__dialog">
+            <button class="modal__close">×</button>
 
-    <h1 class="metallic-text modal__title">Заказ</h1>
-    <p class="modal__text">Наша продукция доступна на площадках:</p>
+            <h1 class="metallic-text modal__title">Заказ</h1>
+            <p class="modal__text">Наша продукция доступна на площадках:</p>
 
-    <div class="modal__shops">
-      <a href="https://ozon.ru/"          target="_blank"><img src="img/ozonw.svg" alt="Ozon"></a>
-      <a href="https://www.wildberries.ru" target="_blank"><img src="img/wb.svg"   alt="Wildberries"></a>
-      <a href="https://www.wildberries.ru" target="_blank"><img src="img/instagramw.svg"   alt="Wildberries"></a>
-      
+            <div class="modal__shops">
+                <a href="https://ozon.ru/" target="_blank"><img src="img/ozonw.svg" alt="Ozon"></a>
+                <a href="https://www.wildberries.ru" target="_blank"><img src="img/wb.svg" alt="Wildberries"></a>
+                <a href="https://www.wildberries.ru" target="_blank"><img src="img/instagramw.svg"
+                        alt="Wildberries"></a>
+
+            </div>
+
+        </div>
     </div>
-    
-  </div>
-</div>
 
 </body>
 <script src="script.js">
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const v = document.getElementById('intro-video');
+
+        /*‑‑ страховка для iOS: задаём muted и пытаемся запустить вручную ‑‑*/
+        v.muted = true;                // свойство, не только атрибут
+        v.play().catch(() => {
+            /* если всё‑таки заблокировало, ждём первого тапа и сразу играем */
+            const resume = () => { v.play(); document.removeEventListener('touchstart', resume); };
+            document.addEventListener('touchstart', resume);
+        });
+    });
 </script>
 <script>
     const spacing = 350;                                   // расстояние между центрами
@@ -445,84 +454,98 @@
     /* ---------- первый запуск ------------------------------------------- */
     render();
 </script>
-<script>
-    /* ---------- данные и пути ----------------------------------------- */
-    const TOTAL = 17;
-    const thumbs = i => `img/photo${i}.jpg`;        // если нет превью – используем те же
-    const full = i => `img/photo${i}.jpg`;
-
-    const groupSize = 4;
-    const groupsTotal = Math.ceil(TOTAL / groupSize);
-
+<script type="module">
+    /* ---------- настройки --------------------------------------------- */
+    const TOTAL      = 17;                       // всего фото
+    const full   = i => `img/photo${i}.jpg`;     // путь к полно‑размерному
+    
     /* ---------- DOM ---------------------------------------------------- */
-    const gLeft = document.querySelector('.gallery-left');
-    const gTop = document.querySelector('.gallery-top');
-    const gSmall = document.querySelectorAll('.gallery-small');
-    const dots = document.querySelectorAll('.dot');
-
-    const light = document.getElementById('lightbox');
-    const lbImg = light.querySelector('.lb-img');
-    const lbPrev = light.querySelector('.lb-prev');
-    const lbNext = light.querySelector('.lb-next');
+    const gLeft   = document.querySelector('.gallery-left');
+    const gTop    = document.querySelector('.gallery-top');
+    const gSmall  = document.querySelectorAll('.gallery-small');
+    const dots    = document.querySelectorAll('.dot');
+    
+    const light   = document.getElementById('lightbox');
+    const lbImg   = light.querySelector('.lb-img');
+    const lbPrev  = light.querySelector('.lb-prev');
+    const lbNext  = light.querySelector('.lb-next');
     const lbClose = light.querySelector('.lb-close');
-
+    
     /* ---------- состояние ---------------------------------------------- */
-    let groupIdx = 0;     // какая пачка 0‑3
-    let lbIdx = 1;     // какое фото в лайтбоксе 1‑17
-
+    let groupIdx = 0;           // какая пачка «точек» сейчас 0‑3
+    let lbIdx    = 1;           // текущая картинка в lightbox (1‑17)
+    
     /* ---------- helpers ------------------------------------------------- */
-    function fadeIn(el) {
-        el.classList.remove('gallery-ready');
-        requestAnimationFrame(() => el.classList.add('gallery-ready'));
-    }
     function setBg(el, url) { el.style.backgroundImage = `url(${url})`; }
-
-    function renderGallery() {
-        const start = groupIdx * groupSize;              // 0,4,8...
-        const indices = Array.from({ length: groupSize }, (_, i) => (start + i) % TOTAL + 1);
-
-        setBg(gLeft, full(indices[0])); gLeft.dataset.id = indices[0];
-        setBg(gTop, full(indices[1])); gTop.dataset.id = indices[1];
-        gSmall.forEach((el, i) => {
-            setBg(el, full(indices[i + 2]));
-            el.dataset.id = indices[i + 2];
-        });
-        [gLeft, gTop, ...gSmall].forEach(fadeIn);
-
-        dots.forEach((d, i) => d.classList.toggle('active', i === groupIdx));
+    function fadeIn(el) { el.classList.remove('gallery-ready');
+                          requestAnimationFrame(()=>el.classList.add('gallery-ready')); }
+    
+    /* ---------- галерея ------------------------------------------------- */
+    const groupSize = 4, groupsTotal = Math.ceil(TOTAL / groupSize);
+    
+    function renderGallery(){
+      const start   = groupIdx * groupSize;          // 0,4,8...
+      const indices = Array.from({length:groupSize},(_,i)=>(start+i)%TOTAL+1);
+    
+      setBg(gLeft , full(indices[0])); gLeft .dataset.id = indices[0];
+      setBg(gTop  , full(indices[1])); gTop  .dataset.id = indices[1];
+      gSmall.forEach((el,i)=>{ setBg(el, full(indices[i+2])); el.dataset.id = indices[i+2]; });
+    
+      [gLeft, gTop, ...gSmall].forEach(fadeIn);
+      dots.forEach((d,i)=>d.classList.toggle('active', i===groupIdx));
     }
-
+    
     /* ---------- lightbox ----------------------------------------------- */
-    function openLB(id) {
-        lbIdx = ((id - 1 + TOTAL) % TOTAL) + 1;      // нормализуем в диапазон 1‑17
-        lbImg.classList.remove('show');
-        const tmp = new Image();
-        tmp.onload = () => { lbImg.src = tmp.src; lbImg.classList.add('show'); };
-        tmp.src = full(lbIdx);
-        light.classList.remove('hide');
+    function openLB(id){
+      lbIdx = ((id - 1 + TOTAL) % TOTAL) + 1;      // нормализуем
+      lbImg.classList.remove('show');              // плавно прячем
+      setTimeout(()=>{
+          lbImg.src = full(lbIdx);                 // меняем картинку
+          lbImg.onload = ()=>lbImg.classList.add('show'); // fade‑in после загрузки
+      },200);
     }
-    lbClose.onclick = () => light.classList.add('hide');
-    lbPrev.onclick = () => openLB(lbIdx - 1);
-    lbNext.onclick = () => openLB(lbIdx + 1);
-
-    /* ---------- события ------------------------------------------------- */
-    [gLeft, gTop, ...gSmall].forEach(el => {
-        el.addEventListener('click', () => openLB(+el.dataset.id));
+    
+    lbPrev.onclick  = ()=>openLB(lbIdx - 1);
+    lbNext.onclick  = ()=>openLB(lbIdx + 1);
+    lbClose.onclick = ()=>light.classList.add('hide');
+    
+    /* ---------- клики по миниатюрам ------------------------------------ */
+    [gLeft, gTop, ...gSmall].forEach(el=>{
+      el.addEventListener('click', ()=>{
+        openLB(+el.dataset.id);
+        light.classList.remove('hide');
+      });
     });
-    dots.forEach((dot, i) => dot.addEventListener('click', () => {
-        groupIdx = i; renderGallery(); resetTimer();
-    }));
-
+    
+    /* ---------- свайп для тача  ---------------------------------------- */
+    function swipe(el, onLeft, onRight, min=40){
+      let x0=null;
+      el.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+      el.addEventListener('touchend',  e=>{
+        if(x0===null) return;
+        const dx = e.changedTouches[0].clientX - x0;
+        if(Math.abs(dx)>min) (dx<0 ? onLeft : onRight)();
+        x0=null;
+      });
+    }
+    
+    swipe(light, ()=>openLB(lbIdx+1), ()=>openLB(lbIdx-1));       // свайп внутри lightbox
+    swipe(document.querySelector('.gallery'),
+          ()=>{groupIdx=(groupIdx+1)%groupsTotal;renderGallery();},
+          ()=>{groupIdx=(groupIdx-1+groupsTotal)%groupsTotal;renderGallery();}
+    );
+    
     /* ---------- авто‑карусель ------------------------------------------ */
     let timer;
-    function resetTimer() {
-        clearInterval(timer);
-        timer = setInterval(() => { groupIdx = (groupIdx + 1) % groupsTotal; renderGallery(); }, 5000);
-    }
-
+    function resetTimer(){ clearInterval(timer);
+      timer=setInterval(()=>{groupIdx=(groupIdx+1)%groupsTotal;renderGallery();},5000);}
+    dots.forEach((dot,i)=>dot.onclick=()=>{groupIdx=i;renderGallery();resetTimer();});
+    
     /* ---------- init ---------------------------------------------------- */
     renderGallery(); resetTimer();
-</script>
+    
+    </script>
+    
 <script>
     /* ------------------- Intersection Observer ------------------- */
     const observer = new IntersectionObserver((entries, obs) => {
@@ -540,77 +563,186 @@
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
 
-  
-<script>
-    window.addEventListener('load', () => {
-      // запускаем анимацию первого экрана
-      document.querySelector('.block1')?.classList.add('show');
-    });
-  </script>
-<script>
-   window.addEventListener('load', () => {
-  // Центр появляется с анимацией
-  const body = document.body;
 
-  // После bounce-интро показываем всё остальное
-  setTimeout(() => {
-    body.classList.add('reveal-start'); // показывает всё
-    document.querySelector('.block1')?.classList.add('show');
-  }, 1400); // после centerBounceIn
-});
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.body.classList.add('reveal-start');
-    document.querySelector('.block1')?.classList.add('show');
-  }, 1400); // после bounce центра
-});
-  </script>
-  <script>
+<script>
     window.addEventListener('load', () => {
-      const introWrap = document.getElementById('intro-video-wrap');
-      const video = document.getElementById('intro-video');
-  
-      // Либо ждём окончания видео:
-      // video.addEventListener('ended', hideIntro);
-  
-      // Либо авто-скрытие через N секунд:
-      setTimeout(hideIntro, 4000); // 4 секунды (можешь изменить)
-  
-      function hideIntro() {
-        introWrap.classList.add('fade-out');
-  
-        setTimeout(() => {
-          introWrap.remove();
-          document.querySelector('.center')?.classList.add('bounce-start');
-          document.body.classList.add('reveal-start');
-          document.querySelector('.block1')?.classList.add('show');
-        }, 1500); // после fade-out
-      }
+        // запускаем анимацию первого экрана
+        document.querySelector('.block1')?.classList.add('show');
     });
-    
-  </script>
-  <script>
+</script>
+<script>
     window.addEventListener('load', () => {
-      const introWrap = document.getElementById('intro-video-wrap');
-      const video = document.getElementById('intro-video');
-  
-      // Вариант 1: ждём окончания видео
-      video.addEventListener('ended', hideIntro);
-  
-      // Вариант 2: если хочешь автозакрытие через 5 сек независимо от окончания
-      // setTimeout(hideIntro, 5000);
-  
-      function hideIntro() {
-        introWrap.classList.add('fade-out');
-  
-        // Появление основного сайта после скрытия
+        // Центр появляется с анимацией
+        const body = document.body;
+
+        // После bounce-интро показываем всё остальное
         setTimeout(() => {
-          introWrap.remove();
-          document.body.classList.add('reveal-start');
-          document.querySelector('.block1')?.classList.add('show');
-        }, 1000); // дождаться fade-out
-      }
+            body.classList.add('reveal-start'); // показывает всё
+            document.querySelector('.block1')?.classList.add('show');
+        }, 1400); // после centerBounceIn
     });
-  </script>
-  
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.body.classList.add('reveal-start');
+            document.querySelector('.block1')?.classList.add('show');
+        }, 1400); // после bounce центра
+    });
+</script>
+<script>
+    window.addEventListener('load', () => {
+        const introWrap = document.getElementById('intro-video-wrap');
+        const video = document.getElementById('intro-video');
+
+        // Либо ждём окончания видео:
+        // video.addEventListener('ended', hideIntro);
+
+        // Либо авто-скрытие через N секунд:
+        setTimeout(hideIntro, 4000); // 4 секунды (можешь изменить)
+
+        function hideIntro() {
+            introWrap.classList.add('fade-out');
+
+            setTimeout(() => {
+                introWrap.remove();
+                document.querySelector('.center')?.classList.add('bounce-start');
+                document.body.classList.add('reveal-start');
+                document.querySelector('.block1')?.classList.add('show');
+            }, 1500); // после fade-out
+        }
+    });
+
+</script>
+<script>
+    window.addEventListener('load', () => {
+        const introWrap = document.getElementById('intro-video-wrap');
+        const video = document.getElementById('intro-video');
+
+        // Вариант 1: ждём окончания видео
+        video.addEventListener('ended', hideIntro);
+
+        // Вариант 2: если хочешь автозакрытие через 5 сек независимо от окончания
+        // setTimeout(hideIntro, 5000);
+
+        function hideIntro() {
+            introWrap.classList.add('fade-out');
+
+            // Появление основного сайта после скрытия
+            setTimeout(() => {
+                introWrap.remove();
+                document.body.classList.add('reveal-start');
+                document.querySelector('.block1')?.classList.add('show');
+            }, 1000); // дождаться fade-out
+        }
+    });
+</script>
+
+<script>
+    /* 1) полифилл для старых Safari — берём у WICG, 4 KB */
+    (async () => {
+  if (!('IntersectionObserver' in window)) {
+    await import('https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver');
+  }
+
+  ['.reveal', '.reveal-delayed'].forEach(sel =>
+    document.querySelectorAll(sel).forEach(el => observer.observe(el)));
+})();
+    /* 2) подписываемся и на reveal‑delayed */
+    ['.reveal', '.reveal-delayed'].forEach(sel =>
+        document.querySelectorAll(sel).forEach(el => observer.observe(el)));
+</script>
+<script>
+    /* В head или самым первым в body */
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    /* подстраховка: мгновенно наверх после полной загрузки */
+    window.addEventListener('load', () => window.scrollTo(0, 0));
+</script>
+
+<script>
+    /* ——— helpers ——— */
+    function swipe(el, cbLeft, cbRight, min = 40) {
+        let x0 = null;
+        el.addEventListener('touchstart', e => x0 = e.touches[0].clientX, { passive: true });
+        el.addEventListener('touchend', e => {
+            if (x0 === null) return;
+            const dx = e.changedTouches[0].clientX - x0;
+            if (Math.abs(dx) > min) (dx < 0 ? cbLeft : cbRight)();
+            x0 = null;
+        });
+    }
+
+    /* ——— слайдер ——— */
+    const sliderWrap = document.getElementById('slider-display');
+    swipe(sliderWrap,
+        () => { current = (current + 1) % len; render(); haptic(); },
+        () => { current = (current - 1 + len) % len; render(); haptic(); });
+
+    /* ——— галерея ——— */
+    const gallery = document.querySelector('.gallery');
+    swipe(gallery,
+        () => { groupIdx = (groupIdx + 1) % groupsTotal; renderGallery(); resetTimer(); },
+        () => { groupIdx = (groupIdx - 1 + groupsTotal) % groupsTotal; renderGallery(); resetTimer(); });
+
+</script>
+
+<script type="module">
+ 
+    (async () => {
+        /* 1. Поля и цели ----------------------------- */
+        const targets = [...document.querySelectorAll('.reveal, .reveal-delayed')];
+
+        /* 2. Если браузер древний — подтягиваем полифилл */
+        (async () => {
+  if (!('IntersectionObserver' in window)) {
+    await import('https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver');
+  }
+
+  ['.reveal', '.reveal-delayed'].forEach(sel =>
+    document.querySelectorAll(sel).forEach(el => observer.observe(el)));
+})();
+
+
+        /* 3. Функция создания/пересоздания наблюдателя */
+        let io;                                // ссылка на текущий observer
+        const makeObserver = () => {
+            if (io) io.disconnect();             // удаляем, если уже был
+
+            const mobile = matchMedia('(max-width:768px)').matches;
+            const vh = (window.visualViewport || window).height;
+            const treshold = mobile ? 0.05 : 0.25;               // 5 % или 25 %
+            const margin = mobile ? -(vh * 0.4) : -(vh * 0.2); // -40 % или -20 %
+
+            io = new IntersectionObserver((entries, obs) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('show'); // CSS-анимация стартует
+                        obs.unobserve(e.target);        // больше не следим
+                    }
+                });
+            }, {
+                threshold: treshold,
+                rootMargin: `0px 0px ${margin}px 0px`
+            });
+
+            targets.forEach(el => io.observe(el));
+        };
+
+        /* 4. Первый запуск после загрузки разметки */
+        window.addEventListener('DOMContentLoaded', makeObserver);
+
+        /* 5. Пересоздаём при изменении высоты viewport’а
+              (адрес‑бар спрятался / появился, поворот экрана, resize) */
+        let debounce;
+        ['resize', 'orientationchange'].forEach(evt =>
+            window.addEventListener(evt, () => {
+                clearTimeout(debounce);
+                debounce = setTimeout(makeObserver, 120); // лёгкий debounce
+            })
+        );
+    })();
+
+</script>
+
 </html>
