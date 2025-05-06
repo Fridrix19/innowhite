@@ -533,3 +533,13 @@ body.reveal-start .reveal-delayed {
   pointer-events: none;
   transition: opacity 1s ease;
 }
+.lb-layer{
+  position:absolute; inset:0; margin:auto;
+  max-width:90vw; max-height:90vh;
+  transition:transform .35s ease, opacity .35s ease;
+}
+
+.to-left   {transform:translateX(-100vw);opacity:0}
+.from-right{transform:translateX( 100vw);opacity:0}
+.to-right  {transform:translateX( 100vw);opacity:0}
+.from-left {transform:translateX(-100vw);opacity:0}
